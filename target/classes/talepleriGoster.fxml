@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.TalepWorkerController">
+    <children>
+        <BorderPane prefHeight="700.0" prefWidth="1050.0">
+            <left>
+                <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="alanlariGoster" mnemonicParsing="false" onAction="#alanlariGosterClick" prefHeight="64.0" prefWidth="348.0" text="ALANLARI GÖSTER" textFill="#2e7d32">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="istatistik" mnemonicParsing="false" onAction="#istatistikClick" prefHeight="64.0" prefWidth="348.0" text="İSTATİSTİK" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kullanicilar" mnemonicParsing="false" onAction="#kullanicilarClick" prefHeight="64.0" prefWidth="348.0" text="KULLANICILAR" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                    </children></VBox>
+            </left>
+            <right>
+                <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="232.0" fitWidth="264.0" layoutX="219.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/rb_2149310349.png" />
+                            </image>
+                        </ImageView>
+                  <TableView fx:id="tableView" layoutX="81.0" layoutY="310.0" prefHeight="270.0" prefWidth="551.0">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="138.90921020507812" text="TALEP ID" />
+                      <TableColumn fx:id="userColumn" prefWidth="188.466796875" text="KULLANICI" />
+                        <TableColumn fx:id="requestColumn" prefWidth="222.5" text="EKİPMAN TALEBİ" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="delete" layoutX="203.0" layoutY="601.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="301.0" style="-fx-background-color: #2E7D32;" text="SEÇİLİ SATIRI SİL" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>

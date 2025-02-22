@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.OdemeController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="talep" mnemonicParsing="false" onAction="#talepClick" prefHeight="64.0" prefWidth="348.0" text="TALEP" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="alanKirala" mnemonicParsing="false" onAction="#alanKiralaClick" prefHeight="64.0" prefWidth="348.0" text="ALAN KİRALA" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="alanlar" mnemonicParsing="false" onAction="#alanlarimClick" prefHeight="64.0" prefWidth="348.0" text="ALANLARIM" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="guncelleme" mnemonicParsing="false" onAction="#guncellemeClick" prefHeight="64.0" prefWidth="348.0" text="GÜNCELLEME" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="odemeYap" layoutX="173.0" layoutY="522.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="347.0" text="ÖDEME YAP" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="nameField" layoutX="232.0" layoutY="363.0" promptText="KART NUMARASI" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                     <font>
+                        <Font name="Arial" size="19.5" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cardNumberField" layoutX="232.0" layoutY="413.0" promptText="AY/YIL" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                     <font>
+                        <Font name="Arial" size="19.5" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="expireDateField" layoutX="232.0" layoutY="463.0" promptText="CVV" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                     <font>
+                        <Font name="Arial" size="19.5" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cvvField" layoutX="232.0" layoutY="313.0" promptText="İSİM" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                     <font>
+                        <Font name="Arial" size="19.5" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="92.0" layoutY="111.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="268.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-pay-money-cash-business-vector-png-image_14537758.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

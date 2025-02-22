@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.AlanlarController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox fx:id="" prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="alanKirala" mnemonicParsing="false" onAction="#alanKiralaClick" prefHeight="64.0" prefWidth="348.0" text="ALAN KİRALA" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="talep" mnemonicParsing="false" onAction="#talepClick" prefHeight="64.0" prefWidth="348.0" text="TALEP" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="guncelleme" mnemonicParsing="false" onAction="#guncellemeClick" prefHeight="64.0" prefWidth="348.0" text="GÜNCELLEME" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="232.0" fitWidth="264.0" layoutX="219.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-vibrant-garden-path-surrounded-by-blooming-flowers-greenery-and-a-white-png-image_14163644.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="userFieldsTable" layoutX="38.0" layoutY="280.0" prefHeight="281.0" prefWidth="633.0">
+                     <columns>
+                        <TableColumn fx:id="fieldIdColumn" prefWidth="99.76644897460938" text="ALAN ID" />
+                        <TableColumn fx:id="fieldNameColumn" prefWidth="99.88720703125" text="ALAN ADI" />
+                        <TableColumn fx:id="fieldSizeColumn" prefWidth="103.1318359375" text="ALAN BOYUTU" />
+                        <TableColumn fx:id="startDateColumn" prefWidth="152.62091064453125" text="BAŞLANGIÇ TARİHİ" />
+                        <TableColumn fx:id="fieldPriceColumn" prefWidth="199.37908935546875" text="GÜNLÜK KİRA BEDELİ" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="odemeYap" layoutX="241.0" layoutY="571.0" mnemonicParsing="false" onAction="#odemeYapClick" prefHeight="59.0" prefWidth="347.0" text="ÖDEME YAP" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="fiyat" layoutX="69.0" layoutY="578.0" prefHeight="45.0" prefWidth="107.0" style="-fx-border-color: #2E7D32;" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.TalepController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="alanKirala" mnemonicParsing="false" onAction="#alanlarimClick" prefHeight="64.0" prefWidth="348.0" text="ALAN KİRALA" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="alanlarim" mnemonicParsing="false" onAction="#alanKiralaClick" prefHeight="64.0" prefWidth="348.0" text="ALANLARIM" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="guncelleme" mnemonicParsing="false" onAction="#guncellemeClick" prefHeight="64.0" prefWidth="348.0" text="GÜNCELLEME" textFill="#2e7d32">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Button>
+               </children></VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="108.0" layoutX="39.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_2706.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="204.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_58620.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="56.0" fitWidth="113.0" layoutX="356.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_60535.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="108.0" layoutX="368.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_135427.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="108.0" layoutX="206.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_131234.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="118.0" fitWidth="114.0" layoutX="46.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_82084.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="119.0" layoutX="534.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_2150268484.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="108.0" layoutX="524.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/hortum.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="kazma" layoutX="57.0" layoutY="182.0" mnemonicParsing="false" text="KAZMA" />
+                  <CheckBox fx:id="kurek" layoutX="221.0" layoutY="181.0" mnemonicParsing="false" text="KÜREK" />
+                  <CheckBox fx:id="capa" layoutX="382.0" layoutY="179.0" mnemonicParsing="false" text="ÇAPA" />
+                  <CheckBox fx:id="hortum" layoutX="546.0" layoutY="184.0" mnemonicParsing="false" text="HORTUM" />
+                  <CheckBox fx:id="traktor" layoutX="65.0" layoutY="355.0" mnemonicParsing="false" text="TRAKTÖR" />
+                  <CheckBox fx:id="tohum" layoutX="228.0" layoutY="356.0" mnemonicParsing="false" text="TOHUM" />
+                  <CheckBox fx:id="gubre" layoutX="383.0" layoutY="355.0" mnemonicParsing="false" text="GÜBRE" />
+                  <CheckBox fx:id="sulama" layoutX="530.0" layoutY="357.0" mnemonicParsing="false" text=" SULAMA SİSTEMİ" />
+                  <ImageView fitHeight="118.0" fitWidth="114.0" layoutX="217.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_41643.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="fidan" fitHeight="118.0" fitWidth="114.0" layoutX="376.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_36471.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="elArabasi" layoutX="237.0" layoutY="491.0" mnemonicParsing="false" text="EL ARABASI" />
+                  <CheckBox fx:id="tohum2" layoutX="399.0" layoutY="495.0" mnemonicParsing="false" text="FİDAN" />
+                  <Button fx:id="talepOlustur" layoutX="226.0" layoutY="563.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="305.0" style="-fx-background-color: #2E7D32;" text="TALEP OLUŞTUR" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

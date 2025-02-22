@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.RegisterController">
+    <children>
+        <BorderPane prefHeight="700.0" prefWidth="1050.0">
+            <center>
+                <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <buttons>
+                        <AnchorPane prefHeight="700.0" prefWidth="696.0">
+                            <children>
+                                <TextField fx:id="nameField" layoutX="225.0" layoutY="222.0" promptText="İsim" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                                    <font>
+                                        <Font name="Arial" size="19.5" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="surnameField" layoutX="225.0" layoutY="272.0" promptText="Soyisim" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                                    <font>
+                                        <Font name="Arial" size="19.5" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="mailField" layoutX="225.0" layoutY="322.0" promptText="Mail" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                                    <font>
+                                        <Font name="Arial" size="19.5" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="gsmField" layoutX="225.0" layoutY="372.0" promptText="GSM" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                                    <font>
+                                        <Font name="Arial" size="19.5" />
+                                    </font>
+                                </TextField>
+                                <PasswordField fx:id="passwordField" layoutX="225.0" layoutY="432.0" promptText="Şifre" style="-fx-background-color: transparent; -fx-border-color: #2E7D32; -fx-border-width: 0px 0px 3px 0px;">
+                                    <font>
+                                        <Font name="Arial" size="19.5" />
+                                    </font>
+                                </PasswordField>
+                                <Button fx:id="registerButton" layoutX="279.0" layoutY="500.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="48.0" prefWidth="146.0" style="-fx-background-color: #2E7D32;" text="KAYIT OL" textFill="WHITE">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Button>
+                                <ImageView fitHeight="110.0" fitWidth="93.0" layoutX="291.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@icons/user_8870481.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </buttons>
+                </ButtonBar>
+            </center>
+            <left>
+                <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="413.0" fitWidth="541.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/HuPgzB-leaves-png.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

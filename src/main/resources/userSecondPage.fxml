@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.UserSecondPageController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="413.0" fitWidth="541.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_80973.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="696.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="alanKiralama" layoutX="326.0" layoutY="189.0" mnemonicParsing="false" onAction="#alanKiralaClick" prefHeight="48.0" prefWidth="204.0" style="-fx-background-color: #2E7D32;" text="ALAN KİRALA" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="110.0" fitWidth="93.0" layoutX="192.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-gardener-vector-illustration-png-image_6131434.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="110.0" fitWidth="93.0" layoutX="198.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-gardener-vector-illustration-png-image_6131436.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="talep" layoutX="323.0" layoutY="279.0" mnemonicParsing="false" onAction="#talepClick" prefHeight="48.0" prefWidth="209.0" style="-fx-background-color: #2E7D32;" text="TALEP OLUŞTUR" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="544.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-free-vector-big-green-leaf-of-tropical-monstera-plant-isolated-on-png-image_6743001.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="110.0" fitWidth="93.0" layoutX="198.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-gardener-vector-illustration-png-image_6131435.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="updateButton" layoutX="324.0" layoutY="375.0" mnemonicParsing="false" onAction="#updateClick" prefHeight="48.0" prefWidth="211.0" style="-fx-background-color: #2E7D32;" text="BİLGİLERİ GÜNCELLE" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="alanlarim" layoutX="323.0" layoutY="467.0" mnemonicParsing="false" onAction="#alanlarimClick" prefHeight="48.0" prefWidth="211.0" style="-fx-background-color: #2E7D32;" text="ALANLARIM" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="110.0" fitWidth="93.0" layoutX="197.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-gardener-vector-illustration-png-image_8537348.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

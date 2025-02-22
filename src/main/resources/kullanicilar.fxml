@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.KullanicilarController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="alanlariGoster" mnemonicParsing="false" onAction="#alanlariGosterClick" prefHeight="64.0" prefWidth="348.0" text="ALANLARI GÖSTER" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="talepleriGoster" mnemonicParsing="false" onAction="#talepleriGosterClick" prefHeight="64.0" prefWidth="348.0" text="TALEPLERİ GÖSTER" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="istatistik" mnemonicParsing="false" onAction="#istatistikClick" prefHeight="64.0" prefWidth="348.0" text="İSTATİSTİK" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableView" layoutX="34.0" layoutY="330.0" prefHeight="241.0" prefWidth="639.0">
+                     <columns>
+                        <TableColumn fx:id="isim" prefWidth="79.00814819335938" text="İSİM" />
+                        <TableColumn fx:id="soyisim" prefWidth="94.74078369140625" text="SOYİSİM" />
+                        <TableColumn fx:id="email" prefWidth="115.75921630859375" text="EMAİL" />
+                        <TableColumn fx:id="telefon" prefWidth="118.4815673828125" text="TELEFON" />
+                        <TableColumn fx:id="kiraciMi" prefWidth="127.51837158203125" text="KİRACI DURUMU" />
+                        <TableColumn fx:id="userId" prefWidth="104.0157470703125" text="ID" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="name" layoutX="305.0" layoutY="165.0" prefHeight="24.0" prefWidth="87.0" />
+                  <Button fx:id="kullaniciGoster" layoutX="50.0" layoutY="202.0" mnemonicParsing="false" onAction="#kullaniciGosterClick" prefHeight="44.0" prefWidth="620.0" text="YUKARIDA GİRİLEN İSME SAHİP KULLANICININ BİLGİLERİNİ GÖSTER" textFill="#2e7d32" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="251.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/rb_36911.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="delete" layoutX="283.0" layoutY="594.0" mnemonicParsing="false" onAction="#deleteSelectedRow" prefHeight="44.0" prefWidth="228.0" text="SEÇİLEN KULLANICIYI SİL" textFill="#2e7d32" />
+                  <ImageView fitHeight="50.0" fitWidth="66.0" layoutX="224.0" layoutY="594.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/garbage_17608000.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="yeniButon" layoutX="51.0" layoutY="256.0" mnemonicParsing="false" onAction="#yeniButonClick" prefHeight="44.0" prefWidth="620.0" text="HİÇ KİRALAMA YAPMAMIŞ KULLANICILARI GÖSTER" textFill="#2e7d32" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

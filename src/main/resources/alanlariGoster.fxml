@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.AdminAlanlarController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1050.0">
+         <left>
+            <VBox prefHeight="700.0" prefWidth="345.0" style="-fx-background-color: #2E7D32;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="istatistik" mnemonicParsing="false" onAction="#istatistikClick" prefHeight="64.0" prefWidth="348.0" text="İSTATİSTİK" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="talepleriGoster" mnemonicParsing="false" onAction="#talepleriGosterClick" prefHeight="64.0" prefWidth="348.0" text="TALEPLERİ GÖSTER" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kullanicilar" mnemonicParsing="false" onAction="#kullanicilarClick" prefHeight="64.0" prefWidth="348.0" text="KULLANICILAR" textFill="#2e7d32">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <AnchorPane prefHeight="700.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField  fx:id='userIdInput' layoutX="300.0" layoutY="190.0" prefHeight="24.0" prefWidth="87.0" />
+                  <Button fx:id="kullaniciGoster" layoutX="50.0" layoutY="245.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="620.0" text="YUKARIDA GİRİLEN IDYE SAHİP KULLANICININ KİRALADIĞI ALANLARI GÖSTER" textFill="#2e7d32" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/pngtree-vibrant-garden-path-surrounded-by-blooming-flowers-greenery-and-a-white-png-image_14163644.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="reservationsTable" layoutX="36.0" layoutY="329.0" prefHeight="281.0" prefWidth="633.0">
+                     <columns>
+                        <TableColumn fx:id="reservationIdColumn" prefWidth="99.76644897460938" text="REZERVASYON ID" />
+                        <TableColumn fx:id="userIdColumn" prefWidth="99.76644897460938" text="KULLANICI ID" />
+                        <TableColumn fx:id="fieldIdColumn" prefWidth="99.76644897460938" text="ALAN ID" />
+                        <TableColumn fx:id="startDateColumn" prefWidth="99.88720703125" text="BAŞLANGIÇ TARİHİ" />
+                        <TableColumn fx:id="endDateColumn" prefWidth="103.1318359375" text="BİTİŞ TARİHİ" />
+                        <TableColumn fx:id="statusColumn" prefWidth="152.62091064453125" text="REZERVASYON DURUMU" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
